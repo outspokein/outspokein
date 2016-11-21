@@ -1,0 +1,4 @@
+<%= image_tag @user.profile_pic.url(:medium) %>
+<%= content_tag :h1, @user.name %>
+<%= content_tag :p, to_tags(@user.skill_list) %>
+<%= content_tag :p, @user.bio %>

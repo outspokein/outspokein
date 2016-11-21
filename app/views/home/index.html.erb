@@ -1,0 +1,33 @@
+<%= content_tag :div, notice, class: "alert alert-warning" if notice %>
+<div class="well">
+	<h2>Welcome to Project Speakeasy</h2>
+	<%= form_tag do %>
+	<div class="input-group">
+		<%= text_field_tag '/search', nil, placeholder: "Search for people who know...", class: "form-control" %>
+		<span class="input-group-btn">
+			<%= submit_tag "Search", class: "btn btn-primary" %>
+		</span>
+	</div>
+	<% end %>
+</div>
+<h3>Here are some people we think are awesome.</h3>
+<hr>
+<div class="row">
+<% @users.each do |user| %>
+	<div class="col-sm-5 col-md-3">
+    <div class="thumbnail speaker">
+      <%= image_tag user.profile_pic.url(:thumb) %>
+      <div class="caption">
+        <%= content_tag :h3 do %>
+        	<%= link_to(content_tag(:span, nil, class: "glyphicon glyphicon-star"), "/", class: "btn btn-xs btn-primary") %>
+        	<%= link_to user.name, user %>
+        <% end %>
+        <%= content_tag :p, truncate(user.bio, length: 140) { link_to "Continue", user } %>
+        <%= content_tag :p, to_tags(user.skill_list) %>
+        <p>
+        </p>
+      </div>
+    </div>
+  </div>
+<% end %>
+</div>
