@@ -1,4 +1,4 @@
-# Project Speakeasy
+# Outspoke.in
 
 The explosion of TED talks, Meetup.com groups and conferences has given rise to a new generation of speakers and content curators. The works of these thought leaders and event organizers have inspired us to transform our communities, our careers and ourselves. Many of these efforts can be viewed online or experienced at a local neighborhood venue. But as transcendent as these experiences may be, discovery and curation of the voices that empower them can be challenging.
 
