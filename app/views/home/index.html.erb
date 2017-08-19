@@ -19,8 +19,8 @@
       <%# image_tag user.profile_pic.url(:thumb) %>
       <%= image_tag user.avatar %>
       <div class="caption">
-        <%= content_tag :h3 do %>
-        	<%= link_to(content_tag(:span, nil, class: "glyphicon glyphicon-star"), "/", class: "btn btn-xs btn-primary") %>
+        <%= content_tag :h4 do %>
+        	<%= link_to(content_tag(:span, nil, class: "glyphicon glyphicon-star"), "/", class: "btn btn-xs btn-default") %>
         	<%= link_to user.name, user %>
         <% end %>
         <%= content_tag :p, truncate(user.bio, length: 60) { link_to "more", user } %>
