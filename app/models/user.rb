@@ -11,5 +11,9 @@ class User < ApplicationRecord
   def name
   	"#{first_name} #{last_name}"
   end
+
+  def avatar
+    "avatars/#{id.to_s.rjust(3, '0')}.png"
+  end
   
 end
