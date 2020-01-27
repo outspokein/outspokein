@@ -7,7 +7,7 @@ gem 'access-granted', '~> 1.1.0'
 #in place editing
 gem 'best_in_place'
 # image uploader
-gem 'paperclip', '~> 5.0.0'
+gem 'paperclip', '~> 5.2.0'
 # for storing images in S3
 gem 'aws-sdk', '~> 2.3.0'
 # support for bootstrap datepicker
