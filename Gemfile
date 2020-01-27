@@ -13,7 +13,7 @@ gem 'aws-sdk', '~> 2.3.0'
 # support for bootstrap datepicker
 gem 'momentjs-rails', '>= 2.9.0'
 # make stuff pretty with bootstrap
-gem 'bootstrap-sass', '~> 3.3.6'
+gem 'bootstrap-sass', '~> 3.4.1'
 # pretty datetime picker
 gem 'bootstrap3-datetimepicker-rails', '~> 4.17.42'
 # locate lat/lon of addresses
